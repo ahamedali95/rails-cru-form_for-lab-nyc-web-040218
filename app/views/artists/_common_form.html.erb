@@ -1,0 +1,13 @@
+<!-- using partial to render the same form for new action and edit action and rails knows the
+route and the method it should use-->
+<%= form_for(@artist) do |a| %>
+  <%= a.label :name %>:
+  <%= a.text_field :name %>
+  <br></br>
+
+  <%= a.label :bio %>:
+  <%= a.text_area :bio %>
+  <br></br>
+
+  <%= a.submit %>
+<% end %>
